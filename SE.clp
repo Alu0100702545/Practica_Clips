@@ -29,7 +29,7 @@
 )
 (
 (defrule fantasia_peque
-	;(or persona(sexo hombre) persona(sexo mujer)) 
+
 	(persona(edad ?a))
 	(persona(genero fantasia))
 	(test(and(>= ?a 7)(< ?a 15)))
@@ -42,20 +42,32 @@
 	)
 	(facts)
 )
-(defrule fantasia_joven
+(defrule fantasia_joven_M
         (persona(sexo mujer)) 
         (persona(edad ?a))
         (persona(genero fantasia))
         (test(and(>= ?a 15)(<= ?a 20)))
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
-        (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (printout )
+        (assert(libro(nombre CrepusculoColeccion)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre MemoriasDeIdhun)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
-(defrule fantasia_adulta
+(defrule fantasia_joven_H
+        (persona(sexo varon))
+        (persona(edad ?a))
+        (persona(genero fantasia))
+        (test(and(>= ?a 15)(<= ?a 20)))
+        =>
+        (printout "Bienvenido a la biblioteca de libros" crlf)
+        (assert(libro(nombre EragonColeccion)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre MontaracesColeccion)(Editorial Destino)(n_pag 1700))
+        )
+        (facts)
+)
+(defrule fantasia_adulta_M
         (persona(sexo mujer))
         (persona(edad ?a))
         (persona(genero fantasia))
@@ -63,8 +75,21 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre LasSombrasDeGrey)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre CrepusculoColeccion)(Editorial Destino)(n_pag 1700))
+        )
+        (facts)
+)
+(defrule fantasia_adulta_H
+        (persona(sexo varon))
+        (persona(edad ?a))
+        (persona(genero fantasia))
+        (test(and(>= ?a 15)(<= ?a 20)))
+        =>
+        (printout "Bienvenido a la biblioteca de libros" crlf)
+        (printout "Para la edad " ?a " Los libros son los siguientes")
+        (assert(libro(nombre JuegoDeTronosColeccion)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre ElNombreDelViento)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
@@ -75,9 +100,9 @@
         (test(and(>= ?a 15)(<= ?a 20)))
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
-        (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (printout "Para la edad " ?a "Los libros son los siguientes")
+        (assert(libro(nombre Fuego)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre Septimus)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
@@ -89,8 +114,8 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre ElGritoDeLasTierrasdeHielo)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre Graceling)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
@@ -102,8 +127,8 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre Temerario)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre ElCodigoDeDaVinchi)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
@@ -128,8 +153,8 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre LaEspadadeElbos)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre LaLocaHistoriaDeLaHumanidad)(Editorial Montena)(n_pag 192))
         )
         (facts)
 )
@@ -141,8 +166,8 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre DonQuijoteDeLaMancha)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre ElCapitanAlatriste)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
@@ -154,8 +179,8 @@
         =>
         (printout "Bienvenido a la biblioteca de libros" crlf)
         (printout "Para la edad " ?a " Los libros son los siguientes")
-        (assert(libro(nombre HarryPotterColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre NarniaColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre Ronin)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre ElTemplo)(Editorial Destino)(n_pag 1700))
         )
         (facts)
 )
