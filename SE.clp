@@ -41,7 +41,9 @@
 	)
 	(facts)
 )
-    
+ 
+
+
 (defrule fantasia_joven_M
         (persona(sexo mujer)) 
         (persona(edad ?a))
