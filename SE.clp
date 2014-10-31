@@ -78,7 +78,7 @@
 	(printout t "Los libros recomendados  son los siguientes : "crlf)
 	(printout t "" crlf)
 
-        (assert(libro(nombre CrepusculoColeccion)(Editorial Salamandra)(n_pag 3500)))
+        (assert(libro(nombre CrepusculoColeccion)(Editorial Anaya)(n_pag 4000)))
         (assert(libro(nombre MemoriasDeIdhun)(Editorial Destino)(n_pag 1700))
         )
 )
@@ -92,7 +92,7 @@
         (printout t "" crlf)
 
         (assert(libro(nombre EragonColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre MontaracesColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre MontaracesColeccion)(Editorial Destino)(n_pag 2000))
         )
         
 )
@@ -105,8 +105,8 @@
 	(printout t "Los libros recomendados  son los siguientes : "crlf)
 	(printout t "" crlf)
 
-        (assert(libro(nombre LasSombrasDeGrey)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre CrepusculoColeccion)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre LasSombrasDeGrey)(Editorial Salamandra)(n_pag 800)))
+        (assert(libro(nombre CrepusculoColeccion)(Editorial Destino)(n_pag 4000))
         )
         
 )
@@ -119,8 +119,8 @@
 	(printout t "Los libros recomendados  son los siguientes : "crlf)
 	(printout t "" crlf)
 
-        (assert(libro(nombre JuegoDeTronosColeccion)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre ElNombreDelViento)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre JuegoDeTronosColeccion)(Editorial Salamandra)(n_pag 7000)))
+        (assert(libro(nombre ElNombreDelViento)(Editorial Destino)(n_pag 700))
         )
         
 )
@@ -132,8 +132,8 @@
 	(printout t "Los libros recomendados  son los siguientes : "crlf)
 	(printout t "" crlf)
 
-        (assert(libro(nombre Fuego)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre Septimus)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre Fuego)(Editorial Salamandra)(n_pag 500)))
+        (assert(libro(nombre Septimus)(Editorial Destino)(n_pag 400))
         )
         
 )
@@ -145,8 +145,8 @@
         (printout t "Los libros recomendados  son los siguientes : "crlf)
         (printout t "" crlf)
 
-        (assert(libro(nombre ElGritoDeLasTierrasdeHielo)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre Graceling)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre ElGritoDeLasTierrasdeHielo)(Editorial Salamandra)(n_pag 500)))
+        (assert(libro(nombre Graceling)(Editorial Destino)(n_pag 430))
         )
         
 )
@@ -158,8 +158,8 @@
        (printout t "Los libros recomendados  son los siguientes : "crlf)
        (printout t "" crlf)
 
-        (assert(libro(nombre Temerario)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre ElCodigoDeDaVinchi)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre Temerario)(Editorial Salamandra)(n_pag 1200)))
+        (assert(libro(nombre ElCodigoDeDaVinchi)(Editorial Destino)(n_pag 800))
         )
         
 )
@@ -198,8 +198,8 @@
         (printout t "Los libros recomendados  son los siguientes : "crlf)
         (printout t "" crlf)
 
-        (assert(libro(nombre DonQuijoteDeLaMancha)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre ElCapitanAlatriste)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre DonQuijoteDeLaMancha)(Editorial Salamandra)(n_pag 800)))
+        (assert(libro(nombre ElCapitanAlatriste)(Editorial Destino)(n_pag 700))
         )
         
 )
@@ -212,8 +212,8 @@
        (printout t "Los libros recomendados  son los siguientes : "crlf)
        (printout t "" crlf)
 
-        (assert(libro(nombre Ronin)(Editorial Salamandra)(n_pag 3500)))
-        (assert(libro(nombre ElTemplo)(Editorial Destino)(n_pag 1700))
+        (assert(libro(nombre Ronin)(Editorial Salamandra)(n_pag 1500)))
+        (assert(libro(nombre ElTemplo)(Editorial Destino)(n_pag 700))
         )
         
 )
